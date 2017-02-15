@@ -92,6 +92,7 @@ function drawLayerSymbols(painter, sourceCache, layer, coords, isText, translate
 
     for (const coord of coords) {
         const tile = sourceCache.getTile(coord);
+        if (!tile) continue;
         const bucket = tile.getBucket(layer);
         if (!bucket) continue;
         const buffers = isText ? bucket.buffers.glyph : bucket.buffers.icon;

@@ -33,6 +33,7 @@ module.exports = function drawLine(painter, sourceCache, layer, coords) {
 
     for (const coord of coords) {
         const tile = sourceCache.getTile(coord);
+        if (!tile) continue;
         const bucket = tile.getBucket(layer);
         if (!bucket) continue;
 

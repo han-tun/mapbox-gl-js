@@ -20,6 +20,7 @@ function drawCircles(painter, sourceCache, layer, coords) {
         const coord = coords[i];
 
         const tile = sourceCache.getTile(coord);
+        if (!tile) continue;
         const bucket = tile.getBucket(layer);
         if (!bucket) continue;
 
