@@ -39,6 +39,15 @@ Object.defineProperty(mapboxgl, 'accessToken', {
     set: function(token) { config.ACCESS_TOKEN = token; }
 });
 
+// mapboxgl.Painter = require('./render/painter')
+mapboxgl.ImageSource = require('./source/image_source');
+mapboxgl.util.getImage = ajax.getImage;
+mapboxgl.util.browser = require('./util/browser');
+mapboxgl.TileCoord = require('./source/tile_coord.js');
+mapboxgl.RasterBoundsArray = require('./data/raster_bounds_array');
+mapboxgl.Buffer = require('./data/buffer');
+mapboxgl.VertexArrayObject = require('./render/vertex_array_object');
+
 /**
  * Gets and sets the map's [access token](https://www.mapbox.com/help/define-access-token/).
  *
