@@ -34,8 +34,8 @@
         });
 
         var centerCoord = this.centerCoord = util.getCoordinatesCenter(cornerZ0Coords);
-        centerCoord.column = Math.round(centerCoord.column);
-        centerCoord.row = Math.round(centerCoord.row);
+        centerCoord.column = Math.floor(centerCoord.column);
+        centerCoord.row = Math.floor(centerCoord.row);
 
         // NOTE: I (croot) found an issue in mapbox 0.28.0 where the zoom
         // in the centerCoord returned from the above getCoordinatesCenter()
