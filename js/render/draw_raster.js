@@ -34,6 +34,8 @@ function drawRasterTile(painter, sourceCache, layer, coord) {
     gl.disable(gl.STENCIL_TEST);
 
     const tile = sourceCache.getTile(coord);
+    if (!tile) return
+
     const posMatrix = painter.transform.calculatePosMatrix(coord, sourceCache.getSource().maxzoom);
 
     tile.setAnimationLoop(painter.style.animationLoop, layer.paint['raster-fade-duration']);
