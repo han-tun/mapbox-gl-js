@@ -1,5 +1,7 @@
 [![Build Status](https://circleci.com/gh/mapbox/mapbox-gl-js.svg?style=svg)](https://circleci.com/gh/mapbox/mapbox-gl-js) [![Coverage Status](https://coveralls.io/repos/github/mapbox/mapbox-gl-js/badge.svg?branch=master)](https://coveralls.io/github/mapbox/mapbox-gl-js?branch=master)
 
+NOTE: MapD forked this repo in order to be able to update images (See https://github.com/mapbox/mapbox-gl-js/issues/4050). 
+
 # Mapbox GL JS
 
 Mapbox GL JS is a Javascript & WebGL library that renders interactive maps from [vector tiles](https://www.mapbox.com/blog/vector-tiles/) and [Mapbox styles](https://www.mapbox.com/mapbox-gl-style-spec).
